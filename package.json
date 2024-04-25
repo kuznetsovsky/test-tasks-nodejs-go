@@ -3,6 +3,7 @@
   "scripts": {
     "task:1": "node ./bin/task_1.js",
     "task:2": "node ./bin/task_2.js",
-    "task:3": "node ./bin/task_3.js"
+    "task:3": "node ./bin/task_3.js",
+    "task:4": "node ./bin/task_4.js"
   }
 }
