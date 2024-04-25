@@ -1,15 +1,15 @@
 #!/usr/bin/node
 
-function gcd(a, b) {
+const gcd = (a, b) => {
   while (b !== 0) {
     const t = b;
     b = a % b;
     a = t;
   }
   return a;
-}
+};
 
-function calculateCommonDivisors(numbers) {
+const calculateCommonDivisors = (numbers) => {
   const { length } = numbers;
 
   if (length === 0) {
@@ -33,7 +33,7 @@ function calculateCommonDivisors(numbers) {
 
   divisors.delete(1);
   console.log(Array.from(divisors.values()).sort());
-}
+};
 
 // Пример использования
 calculateCommonDivisors([42, 12, 18]);

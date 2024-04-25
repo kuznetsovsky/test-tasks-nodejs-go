@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-function isPrime(num) {
+const isPrime = (num) => {
   if (num <= 1) return false;
 
   for (let i = 2; i <= Math.sqrt(num); i++) {
@@ -8,9 +8,9 @@ function isPrime(num) {
   }
 
   return true;
-}
+};
 
-function printPrimesInRange(min, max) {
+const printPrimesInRange = (min, max) => {
   const start = parseInt(min);
   const end = parseInt(max);
 
@@ -25,7 +25,7 @@ function printPrimesInRange(min, max) {
   for (let num = start; num <= end; num++) {
     if (isPrime(num)) console.log(num);
   }
-}
+};
 
 // Пример использования
 printPrimesInRange(11, 20);
