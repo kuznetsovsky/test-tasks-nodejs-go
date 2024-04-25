@@ -1,4 +1,4 @@
-#!/usr/bin/nod
+#!/usr/bin/node
 
 const formatNumber = (num) => num <= 9 ? ` ${num}` : `${num}`;
 const print = (table) => console.log(table.join(' '));
